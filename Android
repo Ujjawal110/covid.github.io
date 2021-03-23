@@ -1,0 +1,967 @@
+<!--read instructions before start-->
+<!--only small problem in this android mobile, 6 times console swipe down-->
+<!--NEW features
+1.MUSIC PLAYER
+2.CLONE GB INSTAGRAM
+3.CLONE GB FACEBOOK
+4.CLONE GB WHATSAPP - coming soon
+5.GOOGLE MAPS
+6.SEARCH ENGINE BING--Embed in INTERNET EXPLORER
+7.YOUTUBE--ITS WORK JUST CLICK ON YOUTUBE ICON
+8.ONLINE GAMES--1)FASTLANE ROAD TO REVENGE MASTER 2)LINE COLOR 3D
+9.SETTINGS--1)AIRPLANE MODE 2)WIFI 
+10.SHORTCUT CENTER--CLICK ON TOP/HEADER IN HOME SCREEN & MENU
+11.CALLS & CONTACTS
+12.CALCULATOR
+13.LOCKSCREEN SHORTCUT
+15.GOOGLE PLAYSTORE - come soon
+16.TWITTER - NOT WORKED
+17.CLOCK - come soon
+18.CALENDER - come soon
+
+
+BRAND NAME : SAMSUNG
+MODEL : SMG313H --SAMSUNG GALAXY ACE NXT
+ANDROID VERSION : 4.4.2 KITKAT OS
+RAM : DEPENDS ON YOUR RAM 
+PROCESSOR : DEPENDS ON YOUR PROCESSOR
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>4.4.2 kitkat</title>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="Android">
+        <div class="soundreceiver"></div>
+        <div class="instr" style="color:white; font-size:25px; line-height:40px;" onclick="instruction()">?</div>
+        <div class="frontcamera"></div><div class="front2"></div>
+            <div class="lockscreen">
+               <h1 class="finger"><i class="material-icons" style="font-size:60px;color:red"; id="power">fingerprint</i>
+</h1>
+            </div>
+        <div class="screen">
+            <div class="notification_panel" id="clicknotification">
+                <div class="left"><i class="fa fa-signal" id="airplane5">
+                       <i class="fa fa-plane" id="airplane4"></i>
+                </i></div>
+                
+                <div class="right"> <i class="fa fa-battery-full" style="font-size:24px"></i></div>
+            </div>
+<br>
+
+<div class="icons">
+                <div class="left" id="call__2"><i class="fa fa-phone"></i></div>
+                <div class="left2"><i class="fab fa-internet-explorer" id="search"></i></div>
+                <div class="center" id="menu_textarea"><i class="fa fa-dot-circle"></i></div>
+                <div class="right"><i class="fab fa-youtube" id="youtube1"></i></div>
+                <div class="right2">
+<i class="fa fa-gear" id="about__device__1"></i></div>
+            </div>
+            <div class="icons2">
+<div class="left3"><i class="fab fa-instagram" id="insta_gram_1"></i>
+</div>
+                   <div class="left4"><i class="fab fa-facebook-square" id="facebook"></i>
+</div>
+                  <div class="center2">  <i class="fas fa-calculator" id="calc"></i></div>
+                    <div class="right3"><i class="fa fa-lock" style="font-size:45px" id="locked"></i></div>
+                    <div class="right5"><i class="fas fa-music" id="music__player"></i></div>
+                   
+                    </div>
+                    <div class="button_function">
+                
+                <div class="left"><i class="fa fa-square" style="font-size:15px"></i>
+                </div>
+                <div class="center_area" id="main_button"><i class="fa fa-home" style="font-size:25px"></i></div>
+                <div class="right" id="back"><i class="fa fa-chevron-circle-left" style="font-size:17px"></i></div>
+            </div>
+            <div class="menu">
+                <div class="row">
+                    <i class="fab fa-internet-explorer" id="search"></i>
+                  <i class="fas fa-map" id="googlemaps"></i>  
+                    <i class="fas fa-calendar-alt"></i>
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="row">
+                    <i class="fab fa-chrome"></i>
+                    <i class="fa fa-clock"></i>
+                    <i class="fa fa-phone"></i>
+                    <i class="fab fa-google-drive"></i>
+                </div>
+                <div class="row">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fas fa-folder-open"><!-- filemanager --></i>
+                    <i class="fab fa-google"></i>
+                    <i class="fas fa-gamepad" id="onlinegames"></i>
+                </div>
+                <div class="row">
+                    <i class="fab fa-instagram"></i>
+                    <i class="fas fa-keyboard"></i>
+                    <i class="fas fa-map" id="maps__run"></i>
+                    <i class="fab fa-facebook-messenger"></i>
+                </div>
+                <div class="row">
+                    <i class="fas fa-microphone"></i>
+                    
+                    
+<i class="fa fa-heart"></i>
+                    <i class="fas fa-sticky-note"></i>
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="row">
+                    <i class="fab fa-pinterest-square"></i>
+                    <i class="fab fa-google-play"><!-- play --></i>
+                    <i class="fas fa-cog"></i>
+                    <i class="fas fa-language"></i>
+                </div>
+                <div class="row">
+                    <i class="fa fa-search"></i>
+                    <i class="fa fa-certificate"><!-- video --></i>
+                    <i class="fa fa-cart-plus"></i>
+                    <i class="fa fa-automobile"></i>
+                </div>
+                <div class="row">
+                    <i class="fa fa-bank"></i>
+                    <i class="fa fa-balance-scale"><!-- video --></i>
+                    <i class="fa fa-bullhorn"></i>
+                    <i class="fa fa-bus"></i>
+                </div>
+                
+                <div class="row">
+                    <i class="fab fa-twitter"></i>
+                    <i class="fas fa-play    -circle"><!-- video --></i>
+                    <i class="fab fa-whatsapp"></i>
+                    <i class="fab fa-youtube" id="youtube1"></i>
+                </div>
+              
+            </div>
+            <div id="main__content__insta" class="insta">
+          
+            
+            <br><br><br><h1 class="inst__gram"><i class="fab fa-instagram" style="font-size:65px"; ></i></h1>
+            <br>
+        
+            <br>
+            <form>
+            <label><strong>USERNAME :</strong></label><BR>            <input type="text" placeholder="write Username......" id="user__insta" class="user___name100" style="width:240px; border-radius:5px; height:23px;"><br><br>
+            <label><strong>PASSWORD :</strong></label>
+            <input type="password" placeholder="Write Password......" id="password__instagram" style="width:240px; border-radius:5px; height:23px;">
+            <br><br><input type="submit" value="LOGIN"style="width:240px; border-radius:5px; height:30px; background:linear-gradient(cyan,blue); letter-spacing : 4px; word-spacing :4px; border-style:solid; border-color:darkblue; text-transform:uppercase;">
+            <div id="invalid" style="color:red;"></div>
+            </form>
+            <br><b>SIGNUP</b><br><br>
+    
+        <p align="center" style="font-family:Arial">NEED HELP</p>
+            </div>
+            
+            
+            <div id="App" style="display:none; width:100%; height:100%; background-color:black;">
+                
+            <div class="header__instagram">
+                    <i class="fa fa-camera"></i>
+                    <b>ɢʙ ɪɴꜱᴛᴀɢʀᴀᴍ</b>
+                    <i class="fa fa-send-o"></i>
+                </div>
+                <div class="scroll">
+        <div class="stories">
+        <img src="https://dl.dropbox.com/s/3a6lewv11ch3ic8/IMG_20200802_180725.JPG?dl=0" style="float:left">
+       <img src="https://dl.dropbox.com/s/ibi3w49h8485bqe/Screenshot_20200802_175321.JPG?dl=0" style="float:left;">
+       <img src="https://dl.dropbox.com/s/7jp3yfn0tuazph8/IMG_20200802_180431.JPG?dl=0"style="float:left;">
+       <img src="https://dl.dropbox.com/s/ju9fqp888ydsbxy/Screenshot_20200802_191950.JPG?dl=0"style="float:left;">
+       <img src="https://dl.dropbox.com/s/nqvifiirhen0k1q/Screenshot_20200802_192031.JPG?dl=0"style="float:left;">
+       <img src="https://dl.dropbox.com/s/9wcu15fzhaza70v/Screenshot_20200802_182151.JPG?dl=0"style="float:left;">
+       <img src="https://dl.dropbox.com/s/bdxkkhkiajl1wpb/Screenshot_20200802_185129.JPG?dl=0"style="float:left;">
+       <img src="https://dl.dropbox.com/s/b7eodod0fh458rc/Screenshot_20200802_185219.JPG?dl=0"style="float:left;">
+       <img src="https://dl.dropbox.com/s/szg1hebwb8xcged/Screenshot_20200802_185250.JPG?dl=0"style="float:left;">
+       <img src="https://dl.dropbox.com/s/ko7qb5b08mxygkz/Screenshot_20200802_192101.JPG?dl=0"style="float:left;">
+            </div>
+            <div class="storyname">
+            <b>ʏᴏᴜʀ sᴛᴏʀʏ</b><p>sᴡɪᴘᴇᴜᴘsᴛᴏʀɪᴇs🖕</p>
+        </div>
+      <div class="image__mainpage">
+        <img src="https://dl.dropbox.com/s/7jp3yfn0tuazph8/IMG_20200802_180431.JPG?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">NARENDRA MODI</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px; color:white;"></i>
+            
+        
+        <img src="https://dl.dropbox.com/s/298viu7wrd7dud3/narendramodi-20200802-0001.jpg?dl=0" style="width:100%; height:300px;">
+        <br>
+        <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white"></i>
+            <br><br>
+            
+            <img src="https://dl.dropbox.com/s/llvpgdpxbnzppfa/Screenshot_20200803_124327.JPG?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">PUBG MEME ZONE</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px"></i>
+        <img src="https://dl.dropbox.com/s/kx7vbhitrknspic/pubg.meme.zone-20200803-0001.jpg?dl=0" style="width:100%; height:300px;">
+        <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white"></i>
+            <br><br><br>
+            <img src="https://dl.dropbox.com/s/llvpgdpxbnzppfa/Screenshot_20200803_124327.JPG?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">PUBG MEME ZONE</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px"></i>
+        <img src="https://dl.dropbox.com/s/rlt9y5finmtf5hj/pubg.meme.zone-20200803-0002.jpg?dl=0" style="width:100%; height:300px;">
+        <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white"></i>
+            <br><br><br>
+            <img src="https://dl.dropbox.com/s/llvpgdpxbnzppfa/Screenshot_20200803_124327.JPG?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">PUBG MEME ZONE</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px"></i>
+            <img src="https://dl.dropbox.com/s/uhr35wfgpv9dj90/pubg.meme.zone-20200803-0003.jpg?dl=0" style="width:100%; height:300px;">
+        <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white"></i>
+            <br><br><br>
+             <img src="https://dl.dropbox.com/s/eupwl3zgcm3g53s/Screenshot_20200803_123218.JPG?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">FUNNY MEMES</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px"></i>
+        <img src="https://dl.dropbox.com/s/jeglibucaiex3nv/funny_indian-20200802-0001.jpg?dl=0" style="width:100%; height:300px;">
+        <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white"></i>
+        <br><br><br>
+        <img src="https://dl.dropbox.com/s/eupwl3zgcm3g53s/Screenshot_20200803_123218.JPG?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">PUBG MEME ZONE</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px"></i>
+        <img src="https://dl.dropbox.com/s/7yjwdbx3xuwukd0/pubg.meme.zone-20200803-0004.jpg?dl=0" style="width:100%; height:300px;">
+        <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white"></i>
+            <br><br><br>
+            <img src="https://dl.dropbox.com/s/eupwl3zgcm3g53s/Screenshot_20200803_123218.JPG?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">FUNNY MEME ZONE</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px"></i>
+        <img src="https://dl.dropbox.com/s/hotd95e8bs5a5fj/pubg.meme.zone-20200803-0005.jpg?dl=0" style="width:100%; height:300px;">
+        <i class="fa fa-heart" style="float:left; font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white"></i>
+            <br><br><br>
+            <img src="https://dl.dropbox.com/s/hotd95e8bs5a5fj/pubg.meme.zone-20200803-0005.jpg?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">PUBG MEME ZONE</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px"></i>
+        <img src="https://dl.dropbox.com/s/xuse32zke5l5y3l/pubg.meme.zone-20200803-0006.jpg?dl=0" style="width:100%; height:300px;">
+        <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white"></i>
+        <br><br><br>
+        <img src="https://dl.dropbox.com/s/hotd95e8bs5a5fj/pubg.meme.zone-20200803-0005.jpg?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">FUNNY MEME ZONE</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px"></i><img src="https://dl.dropbox.com/s/7c2vgzodx24psau/pubg.meme.zone-20200803-0007.jpg?dl=0" style="width:100%; height:300px;">
+        <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white"></i>
+        <br><br><br>
+        <img src="https://dl.dropbox.com/s/hotd95e8bs5a5fj/pubg.meme.zone-20200803-0005.jpg?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">FUNNY MEME ZONE</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px"></i>
+        <img src="https://dl.dropbox.com/s/i6hrg9zlf8nt5s4/pubg.meme.zone-20200803-0008.jpg?dl=0" style="width:100%; height:300px;">
+        <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white;font-size:25px; color:white"></i>
+    <br><br><br>
+    <img src="https://dl.dropbox.com/s/hotd95e8bs5a5fj/pubg.meme.zone-20200803-0005.jpg?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">FUNNY MEME ZONE</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px"></i>
+        <img src="https://dl.dropbox.com/s/251vha50u2rkaa8/pubg.meme.zone-20200803-0009.jpg?dl=0" style="width:100%; height:300px;">
+        <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white"></i>
+        <br><br><br>
+        <img src="https://dl.dropbox.com/s/hotd95e8bs5a5fj/pubg.meme.zone-20200803-0005.jpg?dl=0" style="width:25px; height:25px; float:left">
+        <b style="float:left; color:white; line-height:25px;">FUNNY MEME ZONE</b>
+    <i class="fa fa-ellipsis-v" style="float:right; font-size:25px"></i>
+        <img src="https://dl.dropbox.com/s/5bp5v5o76ofm16n/pubg.meme.zone-20200803-0010.jpg?dl=0" style="width:100%; height:300px;">
+        <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <i class="fa fa-bookmark-o" style="float:right;font-size:25px; color:white"></i>
+     
+     <br><br>
+      <h3 style="width:100%; height:35px; background-color:black; display:flex; justify-content:space-around; color:white; font-size:20px; line-height:40px">
+    <i class="fa fa-home" ></i>
+<i class="fa fa-search"></i>
+<i class="fa fa-plus-circle"></i>
+<i class="fa fa-heart"></i>
+<img src="https://dl.dropbox.com/s/3a6lewv11ch3ic8/IMG_20200802_180725.JPG?dl=0" style="width:20px; height:20px; border-radius:40px; line-height:30px;" id="profile">
+</h3>
+        </div>
+        
+        
+          </div>
+            </div>
+            <div id="profile__section">
+                <div class="header__profile">
+                <li class="fa fa-arrow-circle-left" style="float:left;line-height:40px; font-size:25px" id="back__profile"></li>
+                    <b style="float:left; line-height:40px; padding:0px 0px 0px 10px">INFINITE ERROR</b>
+                    <i class="fa fa-bars" style="float:right; font-size:23px; padding:8px 0px 8px 8px"></i>
+                    <i class="fa fa-gears" style="float:right;padding:8px; font-size:23px"></i>
+                    <i class="fa fa-history" style="float:right; padding:8px; font-size:23px"></i> </div>
+                <div class="profileimage">
+                    <img src="https://dl.dropbox.com/s/3a6lewv11ch3ic8/IMG_20200802_180725.JPG?dl=0" style="float:left; padding:8px 8px 8px 8px">
+                    <br>
+                 <b style="padding:0px 28px 0px 0px">9</b>    
+                     <b style="padding:10px 24px 10px 10px">170</b>   
+                     <b style="padding:0px 0px 0px 15px">27</b>   
+                 <br>
+                 <b style="font-size:12px; padding:8px">posts</b><b style="font-size:12px;padding:8px">followers</b><b style="font-size:12px;padding:8px">following</b>
+                </div>
+                <div class="about--">
+                    <p><b style="float:left">𝕌𝕛𝕛𝕒𝕨𝕒𝕝 𝕤𝕙𝕒𝕣𝕞𝕒</b></p>  
+                </div>
+                <div class="icons_-insta">
+                <i class="fa fa-braille"></i>
+                    <i class="fa fa-square"></i>
+                    <i class="fa fa-address-book-o"></i>
+                </div>
+                <div class="posts__">
+                
+                        <img src="https://dl.dropbox.com/s/npoqf4kpto0ss7o/ujjawal3354-20200804-0001.jpg?dl=0">
+                        <img src="https://dl.dropbox.com/s/298viu7wrd7dud3/narendramodi-20200802-0001.jpg?dl=0">
+                        <img src="https://dl.dropbox.com/s/3a6lewv11ch3ic8/IMG_20200802_180725.JPG?dl=0">
+                    <br>
+                        <img src="https://dl.dropbox.com/s/ibi3w49h8485bqe/Screenshot_20200802_175321.JPG?dl=0">
+                        <img src="https://dl.dropbox.com/s/hotd95e8bs5a5fj/pubg.meme.zone-20200803-0005.jpg?dl=0">
+                        <img src="https://dl.dropbox.com/s/llvpgdpxbnzppfa/Screenshot_20200803_124327.JPG?dl=0">
+                        <br>
+                        <img src="https://dl.dropbox.com/s/1o2gbgfl8ihutjr/Screenshot_20200804_102523.JPG?dl=0">
+                        <img src="https://dl.dropbox.com/s/hvgq6lp4jz9yr6f/Screenshot_20200804_102923.JPG?dl=0">
+                        <img src="https://dl.dropbox.com/s/ugnhmhg3dh707pi/Screenshot_20200804_103343.JPG?dl=0">
+                        <br>
+                </div>
+            </div>
+        <script>
+            
+            document.querySelector('form').addEventListener("submit", function(event){
+  event.preventDefault();
+    Login(username.value, password.value)
+});
+
+                invalid = document.querySelector('#invalid')
+username = document.querySelector('#user__insta')
+password = document.querySelector('#password__instagram')
+maininsta = document.querySelector('#main__content__insta')                
+          instamaincontent = document.querySelector('#App')    
+           
+            
+                function empty(string) {
+}
+
+function Login(username, password) {
+    if (username == 'null' && password == 'null' || password.length > 5){
+        invalid.style.display = 'none'
+        maininsta.style.display = 'none'
+        instamaincontent.style.display = 'block'
+
+    } else {
+        if (empty(username) || empty(password)){
+            invalid.textContent = 'PLEASE FILL USERNAME OR PASSWORD'
+        } else {
+            invalid.textContent = 'INVALID Username or Password '
+        }
+        invalid.style.display = 'block'
+    }
+}
+            </script>
+            
+            <div id="facebook3" style="width:100%; height:420px; background-image:linear-gradient(cyan,deepskyblue);"><br><br><br>
+                <b>🇼​🇪​🇱​🇱​🇨​🇴​🇲​🇪​ 🇹​🇴​ <br><br>🇫​🇦​🇨​🇪​🇧​🇴​🇴​🇰​ </b>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div style="width:100%; height:25px; background-color:darkblue; color:white; line-height:30px" id="facebook__clicked">ᶜᴸᴵᶜᴷ ᴴᴱᴿᴱ</div>
+            </div>
+            <div id="facebook__profile1">
+                <div class="header__facebook" style="width:100%; height:40px; background-image:linear-gradient(blue,deepskyblue); display:flex; justify-content:space-around; font-size:25px; color:white;border-bottom:1px solid #fff;">
+                <i class="fa fa-image" style="line-height:40px"></i>
+                <i class="fa fa-address-book-o" style="line-height:40px"></i>
+                <i class='fab fa-facebook-messenger' style="line-height:40px"></i>
+                <i class="fa fa-bell" style="line-height:40px"></i>
+                <i class="fa fa-bars" style="line-height:40px"></i>
+                    </div>
+                    <div style="width:100%; height:40px; background-color:black">
+                        <img src="https://dl.dropbox.com/s/3a6lewv11ch3ic8/IMG_20200802_180725.JPG?dl=0" style="width:40px; height:40px; float:left; border-radius :20px"><b style="color:white; line-height:40px; text-transform:uppercase;">ujjawal sharma</b>
+                    </div>
+                    <div style="overflow:scroll">
+                    <style>
+                        .__notif{
+                            width:100%;
+                            height:35px;
+                            border-bottom:1px solid #fff;
+                        }
+                    </style>
+                    <div class="__notif">
+                        <i class="fa fa-video-camera" style="float:left; font-size:25px; color:white; padding:0px 0px 0px 10px; line-height:30px;"></i><b style="color:white; line-height:30px;">VIDEOS ON WATCH</b>
+                    </div>
+                       <div class="__notif"></div>
+                    <div class="__notif"></div>
+                    <div class="__notif"></div>
+                    <div class="__notif"></div>
+                    <div class="__notif"></div>
+                    <div class="__notif"></div>
+                    <div class="__notif"></div>
+                    <div class="__notif"></div>
+                    <div class="__notif"></div>
+                    <div class="__notif"></div>
+                    <div class="__notif"></div>
+                    </div>
+            </div>
+            <div id="facebook2" class="insta">
+          
+            
+            <br><br><br><h1 class="inst__gram"><i class="fab fa-instagram" style="font-size:65px"; ></i></h1>
+            <br>
+        
+            <br>
+            <form>
+            <label><strong>USERNAME :</strong></label><BR>            <input type="text" placeholder="write Username......"class="user___name100" style="width:255px; border-radius:; height:23px;"><br><br>
+            <label><strong>PASSWORD :</strong></label>
+            <input type="password" placeholder="Write Password......"  style="width:255px; border-radius:; height:23px;">
+            <br><br> 
+            <div style="width:100%; height:30px; background-color:blue; text-align:center; letter-spacing:3px; word-space:2px; line-height:30px; color:white" id="facebook__login">LOGIN</div>
+            <br><h4 style="width:100%; height:20px; background-color:cyan; letter-spacing:3px; word-spacing:2px; color:white;">SIGNUP</h4><br><br>
+    
+        <p align="center" style="font-family:Arial;">NEED HELP</p>
+            </div>
+        
+            <div id="facebook1">
+            <div style="font-size:25px; text-align:center; background-image:linear-gradient(cyan,deepskyblue); width:100% height:30px; text-transform:uppercase; letter-spacing:3.5px; word-spacing:3.5px; line:height:30px; font-weight:bold; color:white;border-bottom:1px solid #fff;">
+            ɢʙ ꜰᴀᴄᴇʙᴏᴏᴋ
+            </div>
+            
+                <div class="header__facebook" style="width:100%; height:40px; background-image:linear-gradient(blue,deepskyblue); display:flex; justify-content:space-around; font-size:25px; color:white;border-bottom:1px solid #fff;">
+                <i class="fa fa-image" style="line-height:40px"></i>
+                <i class="fa fa-address-book-o" style="line-height:40px"></i>
+                <i class='fab fa-facebook-messenger' style="line-height:40px"></i>
+                <i class="fa fa-bell" style="line-height:40px"></i>
+                <i class="fa fa-bars" id="facebook__profile" style="line-height:40px"></i>
+                    </div>
+                    <div class="scrolled">
+            <div class="write__something" style="width:100%; height:40px; background-color:black;border-bottom:1px solid #fff;">
+                <img src="https://dl.dropbox.com/s/3a6lewv11ch3ic8/IMG_20200802_180725.JPG?dl=0" style="width:35px; height:35px; float:left; border-radius:25px; line-height:50px">
+                <input type="text" placeholder="Write Something Here" style="width:180px; height:35px; float:left; border-radius:18px; line-height:80px">
+                  <i class="fa fa-image" style="width:40ppx; height:35px float:right; font-size:25px; line-height:40px;color:white"></i>
+            </div>
+            <div style="background-color:white width:100%; height:15px;border-bottom:1px solid #fff; line-height:15px">
+        <b style="float:left">ꜱᴛᴏʀɪᴇꜱ</b>
+        <b style="float:right">ʏᴏᴜʀ ᴀᴄʜɪᴇᴠᴇ</b>
+            </div>
+            <div style="width:100%; height:120px; background-color:black; border-bottom:1px solid #fff;">
+                <img src="https://dl.dropbox.com/s/3a6lewv11ch3ic8/IMG_20200802_180725.JPG?dl=0" style="width:20%; height:115px; border-radius:12px; float:left; border-style:solid; border-color:blue;">
+                 <img src="https://dl.dropbox.com/s/ibi3w49h8485bqe/Screenshot_20200802_175321.JPG?dl=0" style="width:20%; height:115px; border-radius:12px; float:left; border-style:solid; border-color:blue;">
+                  <img src="https://dl.dropbox.com/s/b7eodod0fh458rc/Screenshot_20200802_185219.JPG?dl=0" style="width:20%; height:115px; border-radius:12px; float:left; border-style:solid; border-color:blue;"> 
+                  <img src="https://dl.dropbox.com/s/szg1hebwb8xcged/Screenshot_20200802_185250.JPG?dl=0" style="width:20%; height:115px; border-radius:12px; float:left; border-style:solid; border-color:blue;">       
+            </div>
+        
+            <div style="width:100%; height:20px; background-color:black; color:white; border-bottom:1px solid #fff;">
+                <b style="float:left">UJJAWAL SHARMA</b>
+               <i class="fa fa-ellipsis-v" style="float:right; padding:0px 9px 0px 0px"></i> 
+            </div>
+            <div style="background-color:black;">
+            <img src="https://dl.dropbox.com/s/3a6lewv11ch3ic8/IMG_20200802_180725.JPG?dl=0" style="width:100%; height:230px;"><br>
+            <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            <br>
+            </div>
+        <br>
+        <div style="width:100%; height:20px; background-color:black; color:white; border-bottom:1px solid #fff;">
+                <b style="float:left">NARENDRA MODI</b>
+               <i class="fa fa-ellipsis-v" style="float:right; padding:0px 9px 0px 0px"></i> 
+            </div>
+            <div style="background-color:black;">
+            <img src="https://dl.dropbox.com/s/0csmj76exiadf5i/narendramodi-20200807-0001.jpg?dl=0" style="width:100%; height:230px;"><br>
+            <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            </div>
+            <br>
+            <br>
+            <div style="width:100%; height:20px; background-color:black; color:white; border-bottom:1px solid #fff;">
+                <b style="float:left">NARENDRA MODI</b>
+               <i class="fa fa-ellipsis-v" style="float:right; padding:0px 9px 0px 0px"></i> 
+            </div>
+            <div style="background-color:black;">
+            <img src="https://dl.dropbox.com/s/8yvkt301mypwdfu/narendramodi-20200807-0002.jpg?dl=0" style="width:100%; height:230px;"><br>
+            <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            </div>
+            <br><br>
+            <div style="width:100%; height:20px; background-color:black; color:white; border-bottom:1px solid #fff;">
+                <b style="float:left">NARENDRA MODI</b>
+               <i class="fa fa-ellipsis-v" style="float:right; padding:0px 9px 0px 0px"></i> 
+            </div>
+            <div style="background-color:black;">
+            <img src="https://dl.dropbox.com/s/ziga7ozgrac3kod/narendramodi-20200807-0003.jpg?dl=0" style="width:100%; height:230px;"><br>
+            <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            </div>
+            <br><br>
+            <div style="width:100%; height:20px; background-color:black; color:white; border-bottom:1px solid #fff;">
+                <b style="float:left">PUBGMEMES2020</b>
+               <i class="fa fa-ellipsis-v" style="float:right; padding:0px 9px 0px 0px"></i> 
+            </div>
+            <div style="background-color:black;">
+            <img src="https://dl.dropbox.com/s/y1dirl25ytlt9gq/pubglitmemes2020-20200807-0001.jpg?dl=0" style="width:100%; height:230px;"><br>
+            <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            </div>
+            <br><br>
+            <div style="width:100%; height:20px; background-color:black; color:white; border-bottom:1px solid #fff;">
+                <b style="float:left">PUBGMEMES2020</b>
+               <i class="fa fa-ellipsis-v" style="float:right; padding:0px 9px 0px 0px"></i> 
+            </div>
+            <div style="background-color:black;">
+            <img src="https://dl.dropbox.com/s/is0yqd7wvl7i0cq/pubglitmemes2020-20200807-0002.jpg?dl=0" style="width:100%; height:230px;"><br>
+            <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            </div>
+            <br><br>
+            <div style="width:100%; height:20px; background-color:black; color:white; border-bottom:1px solid #fff;">
+                <b style="float:left">PUBGMEMES2020</b>
+               <i class="fa fa-ellipsis-v" style="float:right; padding:0px 9px 0px 0px"></i> 
+            </div>
+            <div style="background-color:black;">
+            <img src="https://dl.dropbox.com/s/c3oadstc1a2yev0/pubglitmemes2020-20200807-0003.jpg?dl=0" style="width:100%; height:230px;"><br>
+            <i class="fa fa-heart" style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-comment-o"style="float:left;font-size:25px; color:white"></i>
+        <i class="fa fa-share" style="float:left;font-size:25px; color:white"></i>
+            </div>
+            <br><br>
+            </div>
+            </div>
+        <div id="online__games2">
+        <h3 style="text-align:center; background-image:linear-gradient(cyan,deepskyblue); letter-spacing:3px; word-spacing:3px; width:100%; height:60px; line-height:60px; color:white">ONLINE GAMES</h3>
+        <div style="overflow:scroll; width:100%; height:360px;">
+        <div style="width:100%; height:35px; background-image:linear-gradient(blue,cyan);letter-spacing:3px; word-spacing:3px; text-transform:uppercase; line-height:35px;"><b>car racing</b></div>
+            <img src="https://dl.dropbox.com/s/xqe1m1yzv8pnqyt/download%20%281%29.jpeg?dl=0" style="width:258px; height:200px; border:1px solid black" id="game1">
+            <div style="width:100%; height:35px; background-image:linear-gradient(blue,cyan);letter-spacing:3px; word-spacing:3px; text-transform:uppercase; line-height:35px;"><b>color-3D</b></div>
+         <img src="https://dl.dropbox.com/s/itw7i9ts5b3a79m/Line-Color-3D.jpg?dl=0" style="width:258px; height:200px; border:1px solid black" id="game2"> <div style="width:100%; height:35px; background-image:linear-gradient(blue,cyan);letter-spacing:3px; word-spacing:3px; text-transform:uppercase; line-height:35px;"><b>color -3D</b></div>
+         <img src="https://dl.dropbox.com/s/7flv7uqcln5ahzj/Magic-Tiles-3-Online.jpg?dl=0" style="width:258px; height:200px; border:1px solid black" id="game3">
+         <div style="width:100%; height:35px; background-image:linear-gradient(blue,cyan);letter-spacing:3px; word-spacing:3px; text-transform:uppercase; line-height:35px;"><b>car racing</b></div>
+         <img src="https://dl.dropbox.com/s/e00ib6w26oke9xh/Flow-Free.jpg?dl=0" style="width:258px; height:200px; border:1px solid black" id="game4">
+         <div style="width:100%; height:35px; background-image:linear-gradient(blue,cyan);letter-spacing:3px; word-spacing:3px; text-transform:uppercase; line-height:35px;"><b>car racing</b></div>
+         <img src="https://dl.dropbox.com/s/qccn7driuc49hi8/Parkour-Race.jpg?dl=0" style="width:258px; height:200px; border:1px solid black" id="game5">
+         </div>
+        
+        </div>
+          <div class="calc"
+id="calc__1"><br>
+             <CENTER><h3>CALCULATOR</h3></center>
+             <div class="formstyle">
+<form name="form">
+<br><center><input type="text" name="answer" class="class_2"></center><br>
+<center><input type="button" value="1" onclick="form.answer.value +='1'" id="class1">
+<input type="button" value="2" onclick="form.answer.value +='2'" id="class2">
+<input type="button" value="3" onclick="form.answer.value +='3'" id="class3"><br></center>
+<center><input type="button" value="4" onclick="form.answer.value +='4'" id="class4">
+<input type="button" value="5" onclick="form.answer.value +='5'" id="class5">
+<input type="button" value="6" onclick="form.answer.value +='6'" id="class6"><br></center>
+<center><input type="button" value="7" onclick="form.answer.value +='7'" id="class7">
+<input type="button" value="8"onclick="form.answer.value +='8'" id="class8">
+<input type="button" value="9" onclick="form.answer.value +='9'" id="class9"><br></center>
+<center><font color="red"><input type="button" value="+" onclick="form.answer.value +='+'" id="class10" ></font>
+<input type="button" value="-" onclick="form.answer.value +='-'" id="class11">
+<input type="button" value="*" onclick="form.answer.value +='*'" id="class12"><br></center>
+<center><input type="button" value="/" onclick="form.answer.value +='/'" id="class13">
+<input type="button" value="0" onclick="form.answer.value +='0'" id="class14">
+<input type="button" value="=" onclick="form.answer.value = eval (form.answer.value) " id="class15"><br><br></center>
+<center><input type="button" value="clear All" onclick="form.answer.value = ' ' " class="class_1"></center>
+</form>
+</div>
+          </div>
+          
+        <iframe width="100%" height="422" frameborder="0" scrolling="no" id="mapsgoogle" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=420&amp;hl=en&amp;q=Delhi+(Gurugram)&amp;t=k&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+    
+          <div class="call" id="call__1"><br><section class="call__contacts"><h4>CALLS</h4><h4>CONTACTS</h4></section>
+          
+          <h3 class="calls__history">+91 7654337790</h3>
+           <h3 class="calls__history">+91 7878812670</h3>
+            <h3 class="calls__history">+91 5678665536</h3>
+             <h3 class="calls__history">+91 6353736373</h3>
+              <h3 class="calls__history">+91 6353552522</h3>
+               <h3 class="calls__history">+91 6363638338</h3>
+                <h3 class="calls__history">+91 7364736282</h3>
+                 <h3 class="calls__history">+91 6353636521</h3>
+                 <h3 class="call__history__3">call</h3>
+          </div>
+          <div class="calling__1" id="calling">
+          </div>
+          <div class="main__containeer__about" id="about__device__os">
+           
+              <div class="header__about">
+              <i class="fa fa-bars" style="float:left; line-height:30px; font-size:25px;"></i>
+                  <b style="line-height:30px; color:darkblue;">SETTINGS</b>
+              </div>
+    <div class="main__content__about">
+    <div class="class__about" id="airplane1"><b>AIRPLANE MODE <i class="fa fa-plane" style="font-size:24px;  float:right; line-height:35px;"></i></b></div>
+        <div class="class__about2" id="wifi1"><b>WIFI<i class="fa fa-wifi" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about3"><b>BLUETOOTH<i class="fa fa-bluetooth" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about4"><b>ULTRA GAME MODE<i class="fas fa-gamepad" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about5"><b>DO NOT DISTURB<i class="fa fa-moon-o" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about6"><b>SOUND<i class="fa fa-volume-up" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about7"><b>DISPLAY<i class="fa fa-sun-o" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about8"><b>LOCK SCREEN<i class="fa fa-lock" style="font-size:30px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about9"><b>BATTERY<i class="fa fa-battery-4" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about10"><b>FLASHLIGHT<i class="fa fa-flash" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about11"><b>SPEED BOOSTER <i class="fa fa-rocket" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about12"><b>CALCULATOR<i class="fa fa-calculator" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about13"><b>CONTACTS<i class="fa fa-address-book-o" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about14"><b>CLOCK<i class="fa fa-clock-o" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about15"><b>FEEDBACK<i class="fa fa-heart" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about16"><b>MOTORBIKE MODE
+<i class="fa fa-motorcycle" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about17"><b>LOW BATTERY MODE<i class="fa fa-battery-0" style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about18"><b>SILENT MODE<i class='fas fa-volume-mute' style="font-size:24px; float:right; line-height:35px"></i></b></div>
+        <div class="class__about19"><b>SECURITY<i class="material-icons" style="font-size:24px; float:right; line-height:35px">security</i></b></div>
+        <div class="class__about20"><b>.......................................................</b></div>
+        <div class="class__about21"><b>.......................................................</b></div>
+        <div class="class__about22"><b></b></div>
+    </div>
+       </div>  
+         
+          <div id="searchbing">
+              <iframe width="100%" height="422" frameborder="0" src="https://bing.com"></iframe>
+          </div>
+          
+          <div id="airplane2" class="airplane6">
+              <br><br><br><br><br><br><br><br><br><i class="fas fa-power-off" style="font-size:50px; color:white" id="airplane3"></i><br><br><h3 style="text-align:center; color:white;">TURN ON/OFF</h3>
+          </div>
+          <div id="wifi2">
+              <div class="header__wifi">
+              
+<i class="fa fa-angle-double-left"></i>
+              <B>WIFI</B>
+              </div>
+              <div class="header2__wifi">
+              <b>TURN ON/OFF</b>
+              <i class="fas fa-power-off" id="turnoff"></i>
+              </div>
+              <!--<div class="turnonwifi" id="turnon" style="width:100%; height:20px; background-color;">
+                  <B>TURNING ON WIFI</B>
+              </div>-->
+              <div class="main__content__wifi">
+              <div class="wifinetwork1"><i class="fa fa-wifi"></i><b>AndroidAP</b>
+                    </div>
+                <div class="wifinetwork2"><i class="fa fa-wifi"></i><b>SFR WiFi Public</b></div>
+                <div class="wifinetwork3"><i class="fa fa-wifi"></i><b>Vodafone Hotspot</b></div>
+                <div class="wifinetwork4"><i class="fa fa-wifi"></i><b>ACTIONTEC</b></div>
+                <div class="wifinetwork5"><i class="fa fa-wifi"></i><b>BELTELECOM WIFI</b></div>
+                <div class="wifinetwork6"><i class="fa fa-wifi"></i><b>D-LINK</b></div>
+                <div class="wifinetwork7"><i class="fa fa-wifi"></i><b>netgear-guest</b></div>
+                <div class="wifinetwork8"><i class="fa fa-wifi"></i><b>MSHOME</b></div>
+                <div class="wifinetwork9"><i class="fa fa-wifi"></i><b>DIR-615</b></div>
+                <div class="wifinetwork10"><i class="fa fa-wifi"></i><b>0001docomo</b></div>
+                <div class="wifinetwork11"><i class="fa fa-wifi"></i><b>walmartwifi</b></div>
+                <div class="wifinetwork12"><i class="fa fa-wifi"></i><b>ASUS_5G</b></div>
+              </div>
+          </div>
+          
+          <div id="youtube2">
+          <iframe width="100%" height="422" frameborder="0" src="https://youtu.be/embed">
+              
+          </iframe>
+
+          </div>
+          <div id="game1data">
+              <iframe width="100%" height="422" frameborder="0" src="https://www.yad.com/Fastlane-Road-To-Revenge-Master"> </iframe>
+          </div>
+           <div id="game2data">
+              <iframe width="100%" height="422" frameborder="0" src="https://www.yad.com/Line-Color-3D"> </iframe>
+          </div>
+          <div id="notificationclick" class="noti__fication">
+              <div class="shortcut__1">
+                  <b>SHORTCUT CENTER</b>
+              </div>
+              <br>
+              <section style="display:flex; justify-content:space-around;">
+                  <i class="fas fa-power-off" style="width:30%; height:45px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+                  <i class="fa fa-wifi" style="width:30%; height:45px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+                  <i class="fa fa-bluetooth" style="width:30%; height:45px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+              </section>
+              <br>
+            <section style="display:flex; justify-content:space-around;">
+                  <i class="fa fa-battery-4" style="width:30%; height:50px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+                  <i class="fas fa-power-off" style="width:30%; height:50px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+                  <i class="fa fa-heart" style="width:30%; height:50px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+              </section>
+              <br>
+              <section style="display:flex; justify-content:space-around;">
+                  <i class="fa fa-motorcycle" style="width:30%; height:45px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+                  <i class="fa fa-address-book-o" style="width:30%; height:45px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+                  <i class="fa fa-battery-0" style="width:30%; height:45px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+              </section>
+              <br>
+              <section style="display:flex; justify-content:space-around;">
+                  <i class="fa fa-flash" style="width:30%; height:50px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+                  <i class="fa fa-rocket" style="width:30%; height:50px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+                  <i class="fa fa-calculator" style="width:30%; height:50px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+              </section>
+              <br>
+             <section style="display:flex; justify-content:space-around;">
+                  <i class="fa fa-gear" style="width:30%; height:45px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+                  <i class="fas fa-music" style="width:30%; height:45px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+                  <i class="fa fa-twitter" style="width:30%; height:45px; font-size:30px; background-image:linear-gradient(cyan,deepskyblue);color:black; line-height:50px; border-radius:40px; border-style:solid; border-color:white;"></i>
+              </section>
+              <br>
+              <div style="width:100%; height:33px; background-color:blue; color:white; line-height:30px;" id="short_cut_center">
+                  <B>CLICK HERE TO SLIDEUP </B>
+              </div>
+          </div>
+     <div class="music__containeer" id="music__player__2">
+              <div class="music__header">
+                  <i class="fa fa-angle-left" style="font-size:24px"></i>
+                  <div class="title"><b style="color:white">
+                  MUSIC PLAYER    </b>
+                  </div>
+                  <i class="fa fa-search"></i>
+                </div>     
+                <div class="music__playlistening">
+                    <div class="music__menu">
+                        <div class="menu__player__music">
+                            <ul>
+                                <li><a href="#">songs</a></li>
+                                <li><a href="#">Albums</a></a></li>
+                                <li><a href="#">Artists</a></li>
+                            </ul>
+                            
+                            </div>
+                        </div>
+                      <div class="music___maincontent">
+                                <img src="https://dl.dropbox.com/s/t4hrq8lxi88h2o0/220px-Lahore_Cover_Art.jpeg?dl=0" style="width:240px; height:110px; border-radius:10px; display:absolute;"onclick=playsong() ondblclick=pausesong()>
+                               <section style="width:100%; height:20px; background:linear-gradient(blue,lightblue,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>LAHORE</b>
+                                </section><br> 
+                                <img src="https://dl.dropbox.com/s/vcvgj3rgq7cjimd/Punjabi_Love_Hits_2017_Guru_Randhawa.jpg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=gabru() ondblclick=gabru2()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>HIGH RATED GABRU</b>
+                                </section><br>
+                                
+                                <img src="https://dl.dropbox.com/s/f4n8j47wf0b7qtv/Sakhiyaan_Maninder_Buttar.jpg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=sakhiyaan1() ondblclick=sakhiyaan2()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>SAKHIYAAN</b>
+                                </section><br>
+                                
+                                <img src="https://dl.dropbox.com/s/jrahub9y3r16aot/Main_Tera_Hero_Benny_Dayal%2CShalmali_Kholgade.jpg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=beshrmihgt1() ondblclick=beshrmihgt2()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>BESHARMI KI HEIGHT</b>
+                                </section><br>
+                                
+                                <img src="https://dl.dropbox.com/s/tvuchpow98mor9k/Laal_Bindi_Akull.jpg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=laal1() ondblclick=laal2()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>LAAL BINDI</b>
+                                </section><br>
+                                
+                                <img src="https://dl.dropbox.com/s/z8ylyoenotjgmxr/La_La_La_Neha_Kakkar.jpg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=lala1() ondblclick=lala2()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>LA LA LA</b>
+                                </section><br>
+                                
+                    
+                                <img src="https://dl.dropbox.com/s/o2i5qjp0hw0yluy/Genda_Phool_Full_Badshah.jpg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=songs88() ondblclick=songs89()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>GENDA FOOL</b>
+                                </section><br>
+                                
+                                <img src="https://dl.dropbox.com/s/83c82386td74tz1/download%20%282%29.jpeg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=ghata1() ondblclick=ghata2()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>TERA GHATA</b>
+                                </section><br>
+                                
+                                <img src="https://dl.dropbox.com/s/altj1ou8jgday6p/_111835906_954176c6-5c0f-46e5-9bdc-6e30073588ef.jpg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=astro1() ondblclick=astro2()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>ASTRONOMIA</b>
+                                </section><br>
+                                
+                                <img src="https://dl.dropbox.com/s/4ncr0uqt96rbeqd/mqdefault.jpg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=dark1() ondblclick=dark2()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>DARKSIDE</b>
+                                </section><br>
+                                
+                                <img src="https://dl.dropbox.com/s/9bhpn7irr8oggn6/download%20%283%29.jpeg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=tule1() ondblclick=tule2()>
+                               <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>TULE FEARLESS </b>
+                                </section><br>
+                                
+                                <img src="https://dl.dropbox.com/s/sgezgu1nte5xsdt/Page_One_Guru.jpg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=khali1() ondblclick=khali2()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>KHALI BOTTLAN</b>
+                                </section><br>
+                                
+                                <img src="https://dl.dropbox.com/s/6k5vrs94lpv6wgo/download%20%284%29.jpeg?dl=0" style="width:240px; height:110px; border-radius:10px;"onclick=love1() ondblclick=love2()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b>LOVE MELIKEYOUDO</b>
+                                </section><br>
+                                
+                                <img src="" style="width:240px; height:110px; border-radius:10px;"onclick=gabru() ondblclick=gabru2()>
+                                <section style="display:flex; justify-content:space-around; width:100%; height:20px; background:linear-gradient(blue,cyan,blue); color:white;">
+                                    <b>SONG NAME :</b>
+                                    <b></b>
+                                </section><br>                     
+                                </div>
+        <script>     
+ var mysong = new Audio
+    mysong.src = "https://raag.fm/files/mp3/128/Punjabi/11947395/Lahore%20-%20(Raag.Fm).mp3";
+    
+    
+  var gabru3= new Audio
+  gabru3.src = "https://raag.fm/files/mp3/128/Punjabi/11793580/High%20Rated%20Gabru%20-%20(Raag.Fm).mp3";
+  
+  var sakhiyaan = new Audio
+  sakhiyaan.src = "https://raag.fm/files/mp3/320/Punjabi-Singles/14559/Sakhiyaan%20-%20(Raag.Fm).mp3";
+  
+  var height = new Audio
+  height.src = "https://raag.fm/files/mp3/128/Hindi/1151500/Besharmi%20Ki%20Height%20-%20(Raag.Fm).mp3";
+    
+    var laal = new Audio
+    laal.src = "https://raag.fm/files/mp3/128/Hindi-Singles/13824/Laal%20Bindi%20-%20(Raag.Fm).mp3";
+    
+    var lala = new Audio
+    lala.src = "https://raag.fm/files/mp3/128/Punjabi-Singles/13279/La%20La%20La%20-%20(Raag.Fm).mp3";
+    
+    var songs90 = new Audio
+    songs90.src = "https://raag.fm/files/mp3/320/Punjabi-Singles/17630/Genda%20Phool%20Full%20-%20(Raag.Fm).mp3";
+    
+    var ghata = new Audio
+    ghata.src = "https://raag.fm/files/mp3/128/Hindi-Singles/14144/Tera%20Ghata%20-%20(Raag.Fm).mp3";
+    
+    var astro = new Audio
+    astro.src = "https://dl.dropbox.com/s/qhv1t97z2k9l7do/Vicetone%20%26%20Tony%20Igy%20-%20Astronomia.mp3?dl=0"
+    
+    var dark = new Audio
+    dark.src = "https://dl.dropbox.com/s/0lkzta02dx1bx4j/Alan%20Walker%20%E2%80%92%20Darkside%20ft.%20Au%20Ra%20%26%20Tomine%20Harket.mp3?dl=0"
+    
+    var tule = new Audio
+    tule.src = "https://dl.dropbox.com/s/t3x8ezktgkiufd5/TULE%20-%20Fearless%20%28NCS%20Release%29_20200709205538.mp3?dl=0";
+    
+    var khali = new Audio
+    khali.src = "https://raag.fm/files/mp3/128/Punjabi/1206869/Khali%20Bottlan%20-%20(Raag.Fm).mp3";
+    
+    var love = new Audio
+    love.src = "https://dl.dropbox.com/s/gt9xvfu1970p69h/Love%20Me%20Like%20You%20Do%20-%20Dj%20Rink%20Style%202015%20%28Extended%29%20%28SongsMp3.Com%29.mp3?dl=0";
+    
+    function playsong(){
+        mysong.play();
+    }
+    function pausesong(){
+        mysong.pause();
+    }
+    
+    function gabru(){
+       gabru3.play();
+    }
+    function gabru2(){
+        gabru3.pause();
+    }
+     function sakhiyaan1(){
+       sakhiyaan.play();
+    }
+    function sakhiyaan2(){
+        sakhiyaan.pause();
+    } 
+    function beshrmihgt1(){
+       height.play();
+    }
+    function beshrmihgt2(){
+        height.pause();
+    }
+    
+    function laal1(){
+       laal.play();
+    }
+    function laal2(){
+        laal.pause();
+    }
+    function lala1(){
+       lala.play();
+    }
+    function lala2(){
+        lala.pause();
+    }
+    
+    function songs88(){
+       songs90.play();
+    }
+    function songs89(){
+        songs90.pause();
+    }
+    function ghata1(){
+       ghata.play();
+    }
+    function ghata2(){
+        ghata.pause();
+    }
+    function astro1(){
+       astro.play();
+    }
+    function astro2(){
+        astro.pause();
+    }
+    function dark1(){
+       dark.play();
+    }
+    function dark2(){
+        dark.pause();
+    }
+    function tule1(){
+       tule.play();
+    }
+    function tule2(){
+        tule.pause();
+    }
+    function khali1(){
+       khali.play();
+    }
+    function khali2(){
+        khali.pause();
+    }
+    
+    function love1(){
+       love.play();
+    }
+    function love2(){
+        love.pause();
+    }
+        </script>
+       
+    </div>
+     
+            
+            
+
+
+
